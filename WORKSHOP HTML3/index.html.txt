@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mon projet html</title>
+</head>
+<body>
+    <header>
+<h1>NGOR Ndong</h1>
+<p>Agriculteur. projet1</p>
+            <!--commentaire: barre de navigation avec lien locaux-->
+                <nav aria-label="navigation principale">
+                    <ul>
+                       <li><a href="#home">acceuil</a></li>
+                       <li><a hrecf="#about">à propos</a></li>
+                       <li><a href="#work">travail</a></li>
+                       <li><a href="#CV"></a>cv</li>
+                       <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--main: contenu principal-->
+            <br>
+<main>
+    <!--accueil-->
+<section id="home">
+    <!--accueil-->
+    <h2>acceuil</h2>
+    <p>bienvenu sur mon portfolior: ici prensente mes competences,projet et activité.</p>
+</section>
+<section id="about">
+    <!--commentaire:section à propos-->
+    <h2>à propos</h2>
+    <P>Je suis un developpeur web et producteur agricole</P>
+    <br>
+    <!--liste non ordonnèe des competences-->
+    <h3>competences</h3>
+    <ul>
+        <li>HTML (structure)</li>
+        <li>git/github</li>
+        <li>vscode</li>
+    </ul>
+    <!--audio local: place audio mp3 dans le meme dossier-->
+    <h3>couurte introduction audio</h3>
+    <audio controls>
+        <source src="AUDIO" type="AUD.opus">
+    </audio>
+</section>
+<!--travail/projets-->
+<section id="work">
+    <!--commentaire: section projets/work-->
+    <h2>travail</h2>
+    <article>
+        <h3>projet1: cite personnel</h3>
+        <p>site simple en HTML pour exposé mes produits et profil.</p>
+    </article>
+    <article>
+<h3>projet2: cite professonel une vente en ligne.</h3>
+<p>cite HTML pour ma boutique.</p>
+    </article>
+    <!--tableau-->
+    <h3>resumé des projet</h3>
+    <table>
+        <thead>
+        <tr>
+            <th>projet</th>
+            <th>technologie</th>
+            <th>année</th>
+        </tr>
+        </thead>
+    <tbody>
+        <tr>
+            <td>cite personnel</td>
+            <td>HTML</td>
+            <td>2025</td>
+        </tr>
+        <tr>
+            <td>cite professonel</td>
+            <td>HTML</td>
+            <td>2025</td>
+        </tr>
+    </tbody>
+ </table>
+ <!--video local: place video.mp4 dans le meme dossier-->
+ <h3>video de demostration</h3>
+ <video width="400" controls>
+    <source src="video" type="video.mp4">
+ </video>
+ </section>
+ <!--CV-->
+<section id="CV">
+    <!--section CV-->
+    <h2>CV</h2>
+    <p>tlecharger mon CV (fichier pdf).</p>
+    <p><a href="CV.pdf" target="_blank" rel="noopener">tlecharger le CV (pdf)</a></p>
+    <!--liste ordonnée parcours-->
+    <h3>parcours</h3>
+    <ol>
+        <li>2022 BAC</li>
+        <li>etudiant</li>
+        <li>2025 technicien froid et climatisation</li>
+        <li>2025 developpeure web</li>
+    </ol>
+</section>
+<!--contact: formulaire html-->
+<section id="contact">
+    <!--commentaire section contact avec formulaire-->
+    <h2>contact</h2>
+    <p>remplis le formulaire pour m'envoyer un message(action="#").</p>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!--commentaire: fieldes pour grouper les chemps-->
+        <fieldset>
+            <legend>formulaire de contact</legend>
+            <label for="name">nom:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label for="file" joindre un fichier(CV):></label>
+            <input type="file" id="file" name="file" accept=".pdf,.doc,.docx">
+            <!--exemple de checkbox/ media-->
+            <p>intéressé par:</p>
+            <label><input type="checkbox" name="dispo" value="emplois">emplois</label>
+            <label><input type="checkbox" name="dispo" value="freelance"></label>
+            <p>diponible</p>
+            <label><input type="checkbox" name="dispo" value="tout jour" checked>tous  les jours</label>
+            <label><input type="checkbox" name="dispo" value="chaque foi">à chaque foi</label>
+            <button type="submit">envoyer</button>
+        </fieldset>
+    </form>
+</section>
+</main>
+<footer>
+    <p>Ngor ndong projet 1</p>
+</footer>
+</body>
+</html>
